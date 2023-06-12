@@ -1,0 +1,48 @@
+/* Colors:
+Teal - #007d7b
+(Black)
+(White)
+*/
+html{
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 485px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+nav{
+    background-color: #000000;
+}
+
+
+
+/* FONT, TEXT STYLES */
+p {
+    font-size: 1.25em;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+nav a {
+    font-size: 1.5em;
+}
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+}
+h2 {
+    font-size: 2em;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width:880px){
+
+}
+
+@media screen and (min-width:1300px){
+
+}
