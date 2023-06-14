@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <meta name="author" content="Levin Gatchalian">
-    <title>TK Photography</title>
+    <title>(LG) TK Photography</title>
 </head>
 <body>
     <header>
@@ -14,6 +14,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#top" id="back-to-top">Top</a></li>
             </ul>
         </nav>
     </header>
@@ -26,59 +27,89 @@
             <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
         
         </section>
+        
         <section id="gallery">
             <h2>Gallery</h2>
 
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-            <div class="gallery-img">
-                <img src="images/Chile.png" alt="Chile.png">
-                <figcaption>Chile, 2001</figcaption>
-                   
-                <img src="images/Guatemala.png" alt="Guatemala.png">
-                <figcaption>Guatemala, 1997</figcaption>
-                   
-                <img src="images/Hawaii.png" alt="Hawaii.png">
-                <figcaption>Hawaii, 2010</figcaption>
-                    
-                <img src="images/Iran.png" alt="Iran.png">
-                <figcaption>Iran, 1999</figcaption>
-                    
-                <img src="images/Ireland.png" alt="Ireland.png">
-                <figcaption>Ireland, 2012</figcaption>
-                    
-                <img src="images/Italy.png" alt="Italy.png">
-                <figcaption>Italy, 2015</figcaption>
-                    
-                <img src="images/Moab-Desert.png" alt="Moab-Desert.png">
-                <figcaption>Moab Desert, 2020</figcaption>
-                    
-                <img src="images/Rocky-Mountains.png" alt="Rocky-Mountains.png">
-                <figcaption>Rocky Mountains, 2009</figcaption>
-                    
-                <img src="images/Switzerland.png" alt="Switzerland.png">
-                <figcaption>Switzerland, 2014</figcaption>
-                    
-                <img src="images/UK.png" alt="UK.png">
-                <figcaption>UK, 2005</figcaption>
+            <div id="gallery-imgs">
+            <!---->
                 
-                <img src="images/USA.png" alt="USA.png">
-                <figcaption>USA, 2021</figcaption>
-
-                <img src="images/Wyoming.png" alt="Wyoming.png">
-                <figcaption>Wyoming, 2021</figcaption>
+                <figure>
+                    <img src="images/Chile.png" alt="Chile.png">
+                    <figcaption class="white bottom">Chile, 2001</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Guatemala.png" alt="Guatemala.png">
+                    <figcaption class="white img-top">Guatemala, 1997</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Hawaii.png" alt="Hawaii.png">
+                    <figcaption class="white bottom">Hawaii, 2010</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Iran.png" alt="Iran.png">
+                    <figcaption class="black top-alt">Iran, 1999</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Ireland.png" alt="Ireland.png">
+                    <figcaption class="black top-alt">Ireland, 2012</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Italy.png" alt="Italy.png">
+                    <figcaption class="black bottom">Italy, 2015</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Moab-Desert.png" alt="Moab-Desert.png">
+                    <figcaption class="white bottom">Moab Desert, 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rocky-Mountains.png" alt="Rocky-Mountains.png">
+                    <figcaption class="black img-top">Rocky Mountains, 2009</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Switzerland.png" alt="Switzerland.png">
+                    <figcaption class="black img-top">Switzerland, 2014</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/UK.png" alt="UK.png">
+                    <figcaption class="black img-top">UK, 2005</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/USA.png" alt="USA.png">
+                    <figcaption class="black img-top">USA, 2021</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Wyoming.png" alt="Wyoming.png">
+                    <figcaption class="white img-top">Wyoming, 2021</figcaption>
+                </figure>
+                <!---->
             </div>
         </section>
+        
         <section id="contact-form">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I’ll connect with you soon.</p>
 
+            <form action="#" method="get" class="tk-form">
+                <label>Your contact information</label>
+                
+                <label>Name</label>
+                <input type="text" placeholder="Your full name"  class="form-input">
+                
+                <label>Email</label>
+                <input type="text" placeholder="Enter your email address"  class="form-input">
+                
+                <label>Message</label>
+                <input type="text" placeholder="What can I help you with?" class="form-input">
+
+                <input type="submit" value="Submit Form" id="submit-form">
+            </form>
         </section>
     </main>
-    <section>
-        <h2>Contact</h2>
-
-        <p>Please fill out this form and I’ll connect with you soon.</p>
-    </section>
+    
     <footer>
-        <p>Copyright 2021 TK Photography</p>
+        <p><small>Copyright 2021 TK Photography</small></p>
     </footer>
 </body>
 </html>
