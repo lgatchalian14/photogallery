@@ -18,17 +18,13 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
 }
-nav, #contact-form {
+nav, #contact-form, footer {
     background-color: #000000;
-    color: #ffffff;
 }
 nav {
-    margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
 }
 nav ul {
-    /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr;*/
     display: flex;
     margin: 0 auto;
     padding: 0;
@@ -36,7 +32,6 @@ nav ul {
 }
 nav li {
     list-style: none;
-    margin: 0;
     padding: 10px 0;
 }
 nav a{
@@ -55,21 +50,16 @@ nav a{
 footer {
     padding: 10px;
     text-align: center;
-    background-color: #000000;
-    color: #ffffff;
 }
 
 #about, #gallery {
     padding: 5px;
 }
-#gallery{
-    display: block;
-}
 
 
 
 /* --------- HIDE --------- */
-form label:first-of-type{
+.tk-form label:first-of-type{
     visibility: hidden;
 }
 
@@ -81,6 +71,7 @@ form label:first-of-type{
     grid-template-columns: 1fr;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
 }
 figure {
     text-align: center;
@@ -104,17 +95,14 @@ figcaption {
     color: #000000;
 }
 .img-top{
-    position: relative;
     top: -265px;
     /*background-color:rgba(250, 0, 0, 0.5);*/ /*---used to distinguish---*/
 }
 .top-alt{
-    position: relative;
     top: -615px;
     /*background-color:rgba(0, 0, 250, 0.5);*/ /*---used to distinguish---*/
 }
 .bottom{
-    position: relative;
     bottom: 30px;
     /*background-color: rgba(0, 250, 0, 0.5);*/ /*---used to distinguish---*/
 }
@@ -122,7 +110,7 @@ figcaption {
 
 
 /* --------- FORM STYLES --------- */
-form, label, input {
+.tk-form, label, input {
     display: block;
     margin: 0 auto;
 }
@@ -134,7 +122,6 @@ label {
 .form-input {
     padding: 5px;
     border-radius: 2px;
-    margin: 0 auto;
     margin-bottom: 15px;
     height: 30px;
     width: 97%;
@@ -144,6 +131,7 @@ label {
     padding: 10px;
     font-weight: bold;
 }
+
 #submit-form {
     background-color: #007d7b;
     color: #ffffff;
@@ -156,7 +144,7 @@ label {
 
 
 
-/* --------- FONT, TEXT STYLES --------- */
+/* --------- HOVER STYLES --------- */
 nav a:hover{
     color: #ffffff;
     background-color: #007d7b;
@@ -181,7 +169,6 @@ figcaption, label, input, small {
 }
 nav a {
     font-size: 1.5em;
-    color: #ffffff;
     font-weight: bold;
     padding: 10px;
 }
@@ -195,14 +182,18 @@ h2 {
     font-size: 2em;
     text-align: center;
     margin: 0;
+    padding: 5px;
 }
 a{
     font-size: 1.25em;
 }
 
+nav a, #contact-form, footer {
+    color: #ffffff;
+}
+
 #contact-form {
-    padding: 15px;
-    background-color: #000000;
+    padding: 15px 15px 30px 15px;
 }
 #contact-form h2, #contact-form p {
     text-align: center;
@@ -231,12 +222,6 @@ h1, h2, nav li, figcaption, label, input, small{
     #gallery-imgs{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0;
-        margin: 0;
-    }
-    #gallery-imgs figure{
-        padding: 0;
-        margin: 0;
     }
     #back-to-top{
         visibility: hidden;
@@ -256,11 +241,5 @@ h1, h2, nav li, figcaption, label, input, small{
     #gallery-imgs{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 0;
-        margin: 0;
-    }
-    #gallery-imgs figure{
-        padding: 0;
-        margin: 0;
     }
 }
